@@ -4,13 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
-        <h1>
-            hi
-        </h1>
+       <div class=" grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 items-center  w-full bg-amber-50 ">
+           <div class="  text-center ">
+                <p class="text-lg">---SALE FEVER---</p>
+                <p class="text-4xl font-semibold ">Purchase TK 200 or<br>above & Get <span class="text-[#E527b2]">20% off</span></p>
+                <p class="text-sm font-bold ">Use Promo Code <button class="bg-[#E527b2] px-3 py-2 ml-3 text-white rounded-md">SELL200</button></p>
+           </div>
+           <div class=" ">
+                <img class="w-[400px]" src="images/Summer 1.png" alt="">
+           </div>
+       </div>
     </header>
+    <main class="w-[80%] mx-auto  mt-20 flex flex-col md:flex-col lg:flex-row">
+        <div class="flex-1">
+            <div class="">
+                <p class="text-4xl font-bold mb-12 ">Kitchenware</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice1()" class="grid items-center mx-auto " src="images/prod1.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">K. Accessories</p>
+                   
+                       <p class="text-gray-400"><span id="element-1-price">39.00</span> TK</p>
+                   </div>
+                   </div>
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img  onclick="productPrice2()" id="" class="grid items-center mx-auto " src="images/prod2.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">K. Accessories</p>
+                   
+                       <p class="text-gray-400"><span id="element-2-price">25.00</span> TK</p>
+                   </div>
+                   </div>
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img  onclick="productPrice3()" class="grid items-center  mx-auto " src="images/prod3.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Home Cooker</p>
+                   
+                       <p class="text-gray-400"><span id="element-3-price">49.00</span> TK</p>
+                   </div>
+                   </div>
+                   
+                </div>
+            </div>
+       
+        
+            <div class="">
+                <p class="text-4xl font-bold mb-12 ">Sportswear</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div class=" bg-blue-200  rounded-lg">
+                        <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice4()" class="grid items-center mx-auto " src="images/prod4.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Sports Black Cap</p>
+                   
+                       <p class="text-gray-400"><span id="element-4-price">49.00</span> TK</p>
+                   </div>
+                   </div>
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice5()" class="grid items-center mx-auto " src="images/prod5.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Full Jersey Set</p>
+                   
+                       <p class="text-gray-400"><span id="element-5-price">69.00</span> TK</p>
+                   </div>
+                   </div>
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice6()" class="grid items-center  mx-auto " src="images/prod6.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Sports Cates</p>
+                   
+                       <p class="text-gray-400"><span id="element-6-price">159.00</span> TK</p>
+                   </div>
+                   </div>
+                   
+                </div>
+            
+        </div>
+       
+            <div class="">
+                <p class="text-4xl font-bold mb-12 ">Furniture</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div class=" bg-blue-200  rounded-lg">
+                        <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice7()" class="grid items-center mx-auto " src="images/prod7.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Single Relax chair</p>
+                   
+                       <p class="text-gray-400"><span id="element-7-price">185.00</span> TK</p>
+                   </div>
+                   </div>
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice8()" class="grid items-center mx-auto " src="images/prod8.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Children Play</p>
+                   
+                       <p class="text-gray-400"><span id="element-8-price">299.00</span> TK</p>
+                   </div>
+                   </div>
+                   <div class=" bg-blue-200  rounded-lg">
+                    <div class="rounded-lg bg-slate-200 w-[80%] mx-auto mt-3">
+                        <img onclick="productPrice9()" class="grid items-center  mx-auto " src="images/prod9.png" alt="">
+                    </div>
+                   <div class="text-center">
+                       <p class="text-2xl font-medium">Flexible Sofa</p>
+                   
+                       <p class="text-gray-400"><span id="element-9-price">339.00</span> TK</p>
+                   </div>
+                   </div>
+                   
+                </div>
+            
+        </div>
+        </div>
+        <div class=" lg:ml-10">
+            <p class="font-bold text-4xl mb-10">Have Coupon?</p>
+            <input id="coupon-code" class="border-gray-300 rounded-l-lg bg-gray-200 px-4 py-3" type="text" placeholder="coupon code"><button id="apply-id" class="bg-[#E527b2] text-white rounded-r-lg px-4 py-3" onclick="applyToGetDiscount()">Apply</button>
+            <div id="entry-price"></div>
+            <div class="mt-10">
+                <p  class="font-medium text-2xl">Total Price : <span id="total-price" class="text-gray-400">00</span> <span class="text-gray-400">TK</span></p>
+                <p class="font-medium text-2xl">Discount : <span id="discount-price" class="text-gray-400">00</span> <span class="text-gray-400">TK</span></p>
+                <p class="font-medium text-2xl">Total : <span id="to-tal" class="text-gray-400">00</span> <span class="text-gray-400">TK</span></p>
+                <hr class="w-40 mt-8">
+                
+                    <!-- Open the modal using ID.showModal() method -->
+<button id="make-purchase"  class="bg-[#E527b2] text-2xl text-white px-4 py-3 mt-2 w-full rounded-lg "onclick="my_modal_1.showModal()">Make Purchase</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <div class="">
+        <img src="images/congo.png" alt="">
+    <h3 class="font-bold text-lg">Congratulations</h3>
+    <p class="py-4">You Purchase The Product</p>
     
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="bg-[#E527b2] text-xl text-white px-2 py-1 mt-2 w-[40%] rounded-lg">Go Home</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+            </div>
+        </div>
+    </main>
+    <script src="js/summer-sale.js"></script>
 </body>
 </html>
